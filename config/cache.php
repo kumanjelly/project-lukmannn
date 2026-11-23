@@ -50,7 +50,11 @@ return [
         'file' => [
             'driver' => 'file',
             'path' => storage_path('framework/cache/data'),
+<<<<<<< HEAD
             'lock_path' => storage_path('framework/cache/data'),
+=======
+            'lock_path' => storage_path('framework/cache/locks'),
+>>>>>>> 2d26f3e51a9e2dfaf5dcfd90529fde1f0f3febf1
         ],
 
         'storage' => [

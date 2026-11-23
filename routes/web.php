@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\AdminProjectController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MahasiswaController;
@@ -35,3 +36,24 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/project/pdf', [AdminProjectController::class, 'exportPdf'])->name('project.pdf');
     Route::resource('project', AdminProjectController::class)->except('show');
 });
+=======
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+
+Route::get('/about', function () {
+    return view('products.about');
+})->name('products.about');
+
+Route::get('/contact', function () {
+    return view('products.contact');
+})->name('products.contact');
+
+// Halaman Utama / Landing Page
+Route::get('/', [ProductController::class, 'index'])->name('products.index');
+
+// Halaman Khusus Katalog Produk Baju
+Route::get('/katalog', [ProductController::class, 'catalog'])->name('products.catalog');
+
+// Halaman Detail Produk
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('products.show');
+>>>>>>> 2d26f3e51a9e2dfaf5dcfd90529fde1f0f3febf1

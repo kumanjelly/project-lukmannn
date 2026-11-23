@@ -7,13 +7,19 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+<<<<<<< HEAD
         "barryvdh/laravel-dompdf": "^3.1",
+=======
+>>>>>>> 2d26f3e51a9e2dfaf5dcfd90529fde1f0f3febf1
         "laravel/framework": "^13.17",
         "laravel/tinker": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+<<<<<<< HEAD
         "laravel/boost": "^2.9",
+=======
+>>>>>>> 2d26f3e51a9e2dfaf5dcfd90529fde1f0f3febf1
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",
         "laravel/pint": "^1.27",
